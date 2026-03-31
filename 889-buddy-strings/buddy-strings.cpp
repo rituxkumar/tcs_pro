@@ -20,10 +20,10 @@ public:
                 count++;
             }
         }
+        if(diff.size()!=2) return 0;
 
-
-        return count ==2 && s[diff[1]] == goal[diff[0]] && s[diff[0]] == goal[diff[1]]  ; 
-
+    swap(s[diff[0]],s[diff[1]]);
+    return s== goal;
 
         
     }
